@@ -11,9 +11,9 @@ The solution is designed to handle large flow log files (up to 10 MB) and lookup
 ## Table of Contents
 - [Assumptions](#assumptions)
 - [Algorithm](#algorithm)
+- [How to Compile and Run](#how-to-compile-and-run)
 - [Input and Output](#input-and-output)
 - [Test Cases](#test-cases)
-- [How to Compile and Run](#how-to-compile-and-run)
 - [Performance Analysis](#performance-analysis)
 - [Generating Test Data](#generating-test-data)
 - [Conclusion](#conclusion)
@@ -55,6 +55,45 @@ The solution is designed to handle large flow log files (up to 10 MB) and lookup
 ### Efficiency:
 - The program uses `HashMap` for O(1) lookups in the lookup table.
 - Sorting the outputs is done in O(n log n) time, where `n` is the number of unique tags or port/protocol combinations.
+
+## How to Compile and Run
+
+### **Prerequisites**
+Before compiling and running the program, ensure that Java is installed on your system. If Java is not installed, follow these steps:
+
+#### **Installing Java (if not already installed):**
+For **Ubuntu/Linux**:
+```sh
+sudo apt update
+sudo apt install default-jdk
+java -version
+```
+
+For **MacOS**:
+```sh
+brew install openjdk
+java -version
+```
+
+For **Windows**:
+1. Download and install Java from [Oracle's official website](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html).
+2. Verify the installation:
+```sh
+java -version
+```
+
+### **Compiling and Running the Code**
+Once Java is installed, follow these steps to compile and run the program:
+```sh
+cd illumio-assessment
+javac src/com/illumio/*.java -d out/
+java -cp out com.illumio.Main input output
+```
+
+### **Run Test Cases**
+```sh
+chmod +x run_tests.sh
+./run_tests.sh
 
 ## Input and Output
 ### Input Files
@@ -125,33 +164,6 @@ The project includes **20 test cases** to ensure the program works correctly und
 18. **Large Number of Tags:** Tests lookup table scalability.
 19. **Empty Flow Logs:** Ensures empty files generate empty output.
 20. **Empty Lookup Table:** Ensures all logs default to `Untagged`.
-
-## How to Compile and Run
-### Compile the Code
-Navigate to the project directory:
-```bash
-cd illumio-assessment
-```
-Compile the Java code:
-```bash
-javac src/com/illumio/*.java -d out/
-```
-
-### Run the Program
-Run the program with input and output directories:
-```bash
-java -cp out com.illumio.Main input output
-```
-
-### Run Test Cases
-Make the test script executable:
-```bash
-chmod +x run_tests.sh
-```
-Run the test script:
-```bash
-./run_tests.sh
-```
 
 ## Performance Analysis
 ### Time Complexity:
