@@ -95,7 +95,15 @@ Run the program with input and output directories:
 ```bash
 java -cp out com.illumio.Main input output
 ```
-
+### Run Test Cases
+Make the test script executable:
+```bash
+chmod +x run_tests.sh
+```
+Run the test script:
+```bash
+./run_tests.sh
+```
 
 ## Input and Output
 ### Input Files
