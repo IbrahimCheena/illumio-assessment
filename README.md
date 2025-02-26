@@ -82,26 +82,28 @@ For **Windows**:
 java -version
 ```
 ### Compile the Code
-Navigate to the project directory:
-```bash
+Navigate to the project directory and use **Git Bash** (or the appropriate terminal for your OS):
+```sh
 cd illumio-assessment
 ```
 Compile the Java code:
-```bash
+```sh
 javac src/com/illumio/*.java -d out/
 ```
+
 ### Run the Program
 Run the program with input and output directories:
-```bash
+```sh
 java -cp out com.illumio.Main input output
 ```
+
 ### Run Test Cases
 Make the test script executable:
-```bash
+```sh
 chmod +x run_tests.sh
 ```
 Run the test script:
-```bash
+```sh
 ./run_tests.sh
 ```
 
