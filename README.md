@@ -98,10 +98,6 @@ java -cp out com.illumio.Main input output
 ```
 
 ### Run Test Cases
-Make the test script executable:
-```sh
-chmod +x run_tests.sh
-```
 Run the test script:
 ```sh
 ./run_tests.sh
