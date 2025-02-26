@@ -159,7 +159,7 @@ The project includes **20 test cases** to ensure the program works correctly und
 2. **Multiple Tags for Same Port/Protocol:** Ensures all tags are counted.
 3. **Untagged Logs:** Ensures untagged logs are correctly handled.
 4. **Case Insensitivity:** Ensures case-insensitive matching.
-5. **Large File:** Tests performance with a 10 MB flow log file.
+5. **Large File:** Tests performance with a 6 MB flow log file.
 6. **Mixed Protocols:** Verifies handling of TCP, UDP, and ICMP.
 7. **Invalid Log Entries:** Ensures invalid logs are skipped.
 8. **Large Lookup Table:** Tests efficiency with 10,000 mappings.
