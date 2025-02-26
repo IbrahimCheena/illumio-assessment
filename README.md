@@ -83,9 +83,9 @@ Contains the count of matches for each tag, sorted alphabetically.
 **Example:**
 ```csv
 Tag,Count
+Untagged,0
 sv_P1,1
 sv_P2,1
-Untagged,0
 ```
 
 #### `port_protocol_counts.csv`
