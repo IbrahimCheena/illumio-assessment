@@ -148,6 +148,9 @@ Port,Protocol,Count
 23,tcp,1
 443,tcp,1
 ```
+**Note:** You can manually modify the input files by navigating to the `input` directory and updating `flow_logs.txt` or `lookup_table.csv`. As soon as you compile and run the code, the output files (`tag_counts.csv` and `port_protocol_counts.csv`) will be updated accordingly with the new results.
+
+---
 
 ## Test Cases
 The project includes **20 test cases** to ensure the program works correctly under various conditions. Each test case has:
