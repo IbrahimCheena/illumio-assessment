@@ -108,23 +108,25 @@ The project includes **20 test cases** to ensure the program works correctly und
 1. **Basic Test:** Verifies correct tag mapping and counting.
 2. **Multiple Tags for Same Port/Protocol:** Ensures all tags are counted.
 3. **Untagged Logs:** Ensures untagged logs are correctly handled.
-4. **Large File:** Tests performance with a 10 MB flow log file.
-5. **Case Insensitivity:** Ensures case-insensitive matching.
+4. **Case Insensitivity:** Ensures case-insensitive matching.
+5. **Large File:** Tests performance with a 10 MB flow log file.
 6. **Mixed Protocols:** Verifies handling of TCP, UDP, and ICMP.
 7. **Invalid Log Entries:** Ensures invalid logs are skipped.
 8. **Large Lookup Table:** Tests efficiency with 10,000 mappings.
 9. **ICMP Protocol:** Checks handling of ICMP traffic.
-10. **Zero Port:** Ensures logs with `dstport=0` are processed.
-11. **UDP Protocol:** Verifies handling of UDP logs.
-12. **Unknown Protocol:** Ensures unknown protocols are counted.
-13. **Multiple Logs with Same Port/Protocol:** Ensures correct aggregation.
-14. **Mixed Tags for Same Port/Protocol:** Validates multiple tag handling.
-15. **Large Number of Tags:** Tests lookup table scalability.
-16. **Empty Flow Logs:** Ensures empty files generate empty output.
-17. **Empty Lookup Table:** Ensures all logs default to `Untagged`.
-18. **Duplicate Tags:** Checks for correct duplicate tag counting.
-19. **Special Characters in Tags:** Ensures special character handling.
-20. **Large Port Numbers:** Tests handling of ports up to `65535`.
+10. **Multiple Tags for Same Log Entry:** Validates handling of multiple tags assigned to a single log entry.
+11. **Mixed Case in Lookup Table:** Ensures proper matching when lookup table contains mixed case protocol values.
+12. **Large Port Numbers:** Tests handling of ports up to `65535`.
+13. **Zero Port:** Ensures logs with `dstport=0` are processed.
+14. **UDP Protocol:** Verifies handling of UDP logs.
+15. **Unknown Protocol:** Ensures unknown protocols are counted.
+16. **Multiple Logs with Same Port/Protocol:** Ensures correct aggregation.
+17. **Mixed Tags for Same Port/Protocol:** Validates multiple tag handling.
+18. **Large Number of Tags:** Tests lookup table scalability.
+19. **Empty Flow Logs:** Ensures empty files generate empty output.
+20. **Empty Lookup Table:** Ensures all logs default to `Untagged`.
+19. **Duplicate Tags:** Checks for correct duplicate tag counting.
+20. **Special Characters in Tags:** Ensures special character handling.
 
 ## How to Compile and Run
 ### Compile the Code
