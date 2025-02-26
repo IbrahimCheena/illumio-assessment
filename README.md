@@ -125,8 +125,6 @@ The project includes **20 test cases** to ensure the program works correctly und
 18. **Large Number of Tags:** Tests lookup table scalability.
 19. **Empty Flow Logs:** Ensures empty files generate empty output.
 20. **Empty Lookup Table:** Ensures all logs default to `Untagged`.
-19. **Duplicate Tags:** Checks for correct duplicate tag counting.
-20. **Special Characters in Tags:** Ensures special character handling.
 
 ## How to Compile and Run
 ### Compile the Code
