@@ -81,19 +81,21 @@ For **Windows**:
 ```sh
 java -version
 ```
-
-### **Compiling and Running the Code**
-Once Java is installed, follow these steps to compile and run the program:
-```sh
+### Compile the Code
+Navigate to the project directory:
+```bash
 cd illumio-assessment
+```
+Compile the Java code:
+```bash
 javac src/com/illumio/*.java -d out/
+```
+### Run the Program
+Run the program with input and output directories:
+```bash
 java -cp out com.illumio.Main input output
 ```
 
-### **Run Test Cases**
-```sh
-chmod +x run_tests.sh
-./run_tests.sh
 
 ## Input and Output
 ### Input Files
